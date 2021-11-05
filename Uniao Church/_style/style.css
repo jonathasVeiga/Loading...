@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     outline:none;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
 }
 
 /*navegação*/
@@ -12,7 +14,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1em;
+    padding: 1rem;
 }
 
 #social-midia{
@@ -35,7 +37,7 @@ a{
 }
 
 .fa-bars{
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 /*video*/
@@ -44,6 +46,7 @@ a{
     width: 100%;
     height: 300px;
 }
+
 video{
     position: absolute;
     height: 100%;
@@ -51,3 +54,96 @@ video{
     object-fit:cover;
     object-position: center;
 }
+
+/*section boas vindas*/
+
+#boasVindas{
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.container{
+    text-align:center;
+    padding:2.5rem 1rem;
+    background-color:rgba(0,0,0,0,5);
+}
+
+.container strong{
+    font-weight: 900;
+}
+
+#invista{
+    background-color: #fff;
+    color: #000;
+}
+
+.botao{
+    display: inline-block;
+    font-size: 1.2rem;
+    background-color: rgb(0, 154, 243);
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .5rem 1.4rem;
+    border-radius: 50px;
+
+    margin-top:25px;
+}
+
+.informacao{
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+/*Comunicação*/
+
+#comunicacao{
+    text-align: center;
+    padding: 2rem;
+}
+
+#comunicacao h2{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+/* *{
+    border: 1px solid red;
+} */
+
+#container-comunicacao{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 20px;
+}
+
+.comunicacao-icon{
+    border-radius:15px;
+    box-shadow:0px 5px 20px rgba(0, 0, 0, 0.363);
+    margin: 10px 0;
+    width: 300px;/*testar outra alternativa*/
+}
+
+.comunicacao-icon a{
+    display: flex;
+    text-decoration: none;
+    padding: .5rem 3rem;
+    border-radius:15px;
+}
+
+.comunicacao-icon img{
+    width: 40px;
+}
+
+.icon-name{
+    align-self: center;
+    margin-left: 10px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
