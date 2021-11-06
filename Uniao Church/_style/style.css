@@ -34,6 +34,7 @@ nav{
 
 a{
     color: #000;
+    text-decoration: none;
 }
 
 .fa-bars{
@@ -66,7 +67,8 @@ video{
 .container{
     text-align:center;
     padding:2.5rem 1rem;
-    background-color:rgba(0,0,0,0,5);
+    background-color:#000;
+    color: #fff;
 }
 
 .container strong{
@@ -92,8 +94,8 @@ video{
     margin-top:25px;
 }
 
-.informacao{
-    color: #fff;
+.informacao {
+    color: #b4b3b3;
     display: block;
     margin-top: 10px;
     text-decoration: none;
@@ -102,7 +104,9 @@ video{
 /*Comunicação*/
 
 #comunicacao{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 2rem;
 }
 
@@ -124,7 +128,7 @@ video{
 
 .comunicacao-icon{
     border-radius:15px;
-    box-shadow:0px 5px 20px rgba(0, 0, 0, 0.363);
+    box-shadow:0px 5px 20px rgba(0, 0, 0, 0.365);
     margin: 10px 0;
     width: 300px;/*testar outra alternativa*/
 }
@@ -147,3 +151,40 @@ video{
     font-weight: 600;
 }
 
+/*quem somos*/
+#quem-somos{
+    position: relative;
+    font-weight: 300;
+    background: url(../_picture/pessoas.jpg);
+    background-size: cover;
+    z-index:-1;
+}
+
+#quem-somos:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.884);
+    z-index: 0;
+}
+
+
+#quem-somos #texto h2{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    z-index: 999;
+}
+
+#versiculo{
+    margin: 10px 0;
+    width: 300px;
+    height:75px;
+    margin: 1.5rem auto 0;
+    border-radius: 15px;
+    background-color: #fff;
+}
