@@ -2,6 +2,7 @@
 html{
     /*deixar rolagem suave*/
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 *{
@@ -24,6 +25,7 @@ nav{
 }
 
 section{
+    position: relative;
     padding:2.5rem 2rem;
 }
 
@@ -48,7 +50,10 @@ section{
     margin: 0 10px;
     background-color: #fff;
     font-size: 1.2rem;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
 }
 
 a{
@@ -85,13 +90,15 @@ video{
 /*section boas vindas*/
 
 #boasVindas{
-    position: relative;
-    font-weight: 300;
-    background: url(../_picture/bem-vindo-small.png);
+    /* font-weight: 300; */
+    background: url(../_picture/bemVindo.jpg);
     background-size: cover;
-    padding:2rem;
+    background-attachment: fixed;
+    background-position:top;
+    background-repeat: no-repeat;
     color: #fff;
     font-size: .8rem;/*.6rem*/
+    height: 100%;
 }
 
 #boasVindas .container{
@@ -202,34 +209,23 @@ h2{
 /*quem somos*/
 #quem-somos{
     position: relative;
-    font-weight: 300;
-    /* achar o tamanho mais apropriado */
-    background: url(../_picture/quem-somos-small.jpg);
-    background-size: cover;
-    padding:2rem;
-}
-
-.escurece:before{
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.815);
-}
-
-.escurece .texto{
+    background: url(../_picture/quemSomos-small.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: #fff;
-    position:relative;/*relativo agora ao filtro preto*/
-    z-index: 1;
+    font-size: .8rem;/*.6rem*/
 }
+
+#quem-somos .texto{
+    position:absolute;
+    overflow: hidden;
+    color: #fff;
+} 
 
 #versiculo{
     position: relative;
     margin: 10px 0;
-    width:100%;/*275px*/
+    /* width:100%; 275px*/
     height:85px;
     margin: 1.5rem auto 0;
     border-radius: 15px;

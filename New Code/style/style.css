@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,600&display=swap');
+
+
+/* *{
+    border: 1px solid;
+} */
+
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    /* width: 100vw; */
+
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+header{
+    background-color: #000;
+    padding: .9rem;
+}
+
+header nav{
+    color: #fff;
+    text-align: center;
+    font-size: .6em;
+    height: 6.5%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+header img{
+    width:120px;
+}
+
+#social-midia{
+    display: flex;
+}
+
+.social-icon{
+    padding: .5rem .6rem;
+    background-color: #fff;
+    border-radius: 100%;
+    margin-left: 20px;
+    font-size: .8rem;
+}
+
+.social-icon:first-child{
+    margin-left: 0;
+}
+
+.social-icon a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+.fa-bars{
+    font-size: 1.6rem;
+    cursor:pointer;
+}
+
+#menu-responssivo{
+    position: absolute;
+    top:11.1%;
+    left: 0;
+    background-color: #000000e7;
+    width:100%;
+    height: 100vh;
+    display: none;
+    transition: all .5s ease;
+}
+
+#menu-responssivo ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu-responssivo li{
+    border: 1.3px solid transparent;
+}
+
+#menu-responssivo li:hover{
+    border-bottom: 1.3px solid #fff;
+}
+
+#menu-responssivo a{
+    text-decoration: none;
+    font-size: .9rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 600;
+
+}
+
+.fa-bars:hover ~ #menu-responssivo{/*RESOLVER*/
+    position: absolute;
+}
+
+
+
+@media (min-width:720px) {
+
+    header img{
+        width:150px;
+    }
+
+    .social-icon{
+        font-size: 1rem;
+    }
+
+    .fa-bars{
+        font-size:2rem;
+    }
+
+    .fa-bars{
+        /* display: none; */
+    }
+}
+
+
+#video{
+    position:relative;
+    background-color: rgb(4, 161, 57);
+    position: relative;
+    /* height:33.3%; */
+    height: 33vh;
+    max-height: 50vh;
+}
+
+#video iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: auto;
+    
+}
+
+@media (min-width:720px){
+    #video{
+        height:90vh;
+    }
+}
+
+/* BOAS VINDAS */
+
+#boasvindas{
+    background:url(../picture/bemVindo.jpg);
+    background-size: cover;
+    background-position:top;
+    background-attachment: fixed;
+}
+
+.section-background{
+    padding: 1.8rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.section-background p{
+    text-align: center;
+    color: #fff;
+    font-size: .8rem;
+    margin: 0;
+    line-height: 1.3rem;
+}
+
+p{
+    padding:1.3rem;
+}
+
+
+#boasvindas strong{
+    font-weight: 900;
+}
+
+#invista{
+    background-color: #fff;
+    color: #000;
+    padding:.3rem;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botao{
+    background-color: #009af3;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .5rem 1.4rem;
+    border-radius: 50px;
+    margin-top:15px;
+    align-self: center;
+}
+
+.informacao{
+    font-size: .8rem;
+    padding-top: 5px;
+    color: #919191;
+}
+
+@media (min-width:720px){
+    #boasvindas{
+        background-position:top;
+    }
+    .section-background{
+        padding: 3rem 5rem;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .section-background p{
+        font-size: 1.1rem;
+    }
+
+    #invista{
+       line-height: 35px;
+    }
+
+    .botao{
+        margin-top: 0px;
+    }
+}
+
+@media (min-width:1000px){
+    .section-background{
+    padding: 2.5rem 15rem;
+    }
+}
+
+/* COMUNICAÇÃO */
+
+.section-branca{
+    /* padding: 2.5rem 5rem; */
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.12rem;
+    text-transform: uppercase;
+    font-weight:900;
+}
+
+.section-branca h2{
+    margin:0 0 1rem;
+}
+
+.section-branca p{
+    padding: 0;
+    margin:1rem;
+}
+
+#container-comunicacao{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.comunicacao-icon{
+    border-radius:15px;
+    box-shadow:0px 5px 20px #0000005d;
+    margin: 10px 0;
+    width:230px;/*testar outra alternativa*/
+    /* border: 1px solid red; */
+}
+
+.comunicacao-icon:hover{
+    transition-duration: 500ms;
+    background-color: #f5f5f5;
+}
+.comunicacao-icon:hover .icon-name{
+    transition-duration: 500ms;
+    color: #b9b8b8;
+}
+
+.comunicacao-icon a{
+    /* border: 1px solid rebeccapurple; */
+    display: inline-flex;
+    justify-content: flex-start;
+    
+    text-decoration: none;
+    padding: .6rem 0rem;
+}
+
+.comunicacao-icon:last-child img{
+    padding-left:-50px;
+}
+
+.comunicacao-icon img{
+    width: 30px;
+    height: 30px;
+}
+
+.icon-name{
+    align-self: center;
+    margin-left: 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #919191;
+}
+
+.clique{
+    color: #b4b3b3;
+    display: flex;
+    align-items: center;
+    font-size: .9rem;
+}
+
+.clique span{
+    margin-right: 5px;
+}
+.clique img{
+    display: block;
+    width: 1.3rem;
+}
+
+@media (min-width:720px){
+    .section-branca{
+        padding: 2.5rem 5rem;
+    }
+
+    .section-branca h2{
+        font-size: 1.5rem;
+    }
+
+    .section-branca span{
+        font-size: 1.3rem;
+    }
+
+    .comunicacao-icon{
+        padding: .8rem 1.8rem;
+    }
+
+    .icon-name span{
+        font-size: 1.7rem;
+    }
+}
+
+#quem-somos{
+    background:url(../picture/quemSomos-small.jpg);
+    background-position:left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#quem-somos .texto h2{
+    margin-bottom: 0;
+}
+
+#versiculo img{
+    /* width: 250px; */
+    /* height: 60px; */
+    border-radius: 10px;
+}
+
+@media (min-width:478px){
+    #quem-somos{
+        background:url(../picture/quemSomos.jpg);
+        /* padding: 3rem 5rem; */
+        background-size: cover;
+        background-attachment: fixed;
+        /* height: 30%; */
+    }
+
+    #quem-somos h2{
+        font-size: 1.5rem;
+    }
+
+    #versiculo img{
+        /* width: 400px; */
+        /* height: 90px; */
+    }
+
+}
+
+@media (min-width:1000px){
+    #quem-somos{
+    padding: 2.5rem 15rem;
+    }
+}
+
+/* PASTORES */
+
+#pastores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pastores img{
+    width: 250px;
+}
+
+#nomes{
+    display: flex;
+    position: relative;
+}
+
+#nomes::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 78%;
+    background-color: #9c9c9c;
+    position: absolute;
+    top: 5px;
+    left: 93px;
+}
+
+.nome span{
+    display: block;
+}
+
+.nome h2{
+    margin: 0 15px;
+}
+
+/*FAZER RESPONSSIVO DA IMAGEM*/
+
+@media(min-width:720px){
+    #pastores h2{
+        font-size: 1.5rem;
+    }
+
+    #pastores img{
+        width: 400px;
+    }
+
+    #pastores span{
+        font-size: 1.3rem;
+    }
+
+    #nomes::after{
+        left: 115px;/*ARRUMAR DEIXAR CENTRALIZADO RESPONSSIVAMENTE*/
+    }
+}
+
+/* aqui vai conter o estilo da seção pedido de oração **************************************************************************/
+
+/* PEDIDO DE ORAÇÃO */
+
+#pedido-oracao{
+    background:url(../picture/bgPedido.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#pedido-oracao a{
+    text-decoration: none;
+}
+
+#estamosAqui{
+    display: flex;
+    align-items: center;
+    border: 1px dashed #919191;
+    border-radius: 15px;
+    padding:.8rem;
+    width: 250px;
+}
+
+#estamosAqui p{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 1.161rem;
+    margin-right: 10px;
+}
+
+#estamosAqui strong{
+    font-size: 1.161rem;
+    font-weight: 700;
+}
+
+#estamosAqui img{
+    width: 80px;
+    height: 80px;
+}
+
+@media (min-width:478px){
+    #pedido-oracao{
+        background:url(../picture/bgPedido-large.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #pedido-oracao h2{
+        font-size: 1.5rem;
+    }
+
+    #estamosAqui{
+        width: 300px;
+    }
+
+    #estamosAqui p{
+        font-size: 1.6rem;
+        line-height: 25px;
+        
+    }
+
+    #estamosAqui strong{
+        font-size: 1.6rem;
+        line-height: 25px;
+        
+    }
+
+    #estamosAqui img{
+        width: 100px;
+        height: 100px;
+    }
+    #pedido-oracao .links{
+        margin-top: 20px;
+    }
+
+}
+
+/* GENEROSIDADE */
+
+#generosidade img{
+    width: 150px;
+}
