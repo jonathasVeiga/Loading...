@@ -19,116 +19,125 @@ html,body{
     font-size: 1em;
 }
 
-header{
-    background-color: #000;
+#header .container{
+    box-sizing: border-box;
+    height: 55px;
     padding: .9rem;
-}
-
-header nav{
-    color: #fff;
-    text-align: center;
-    font-size: .6em;
-    height: 6.5%;
-
+    background-color: #000;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    flex-direction: row;
+    justify-content: space-between;
 }
 
-header img{
-    width:120px;
-}
-
-#social-midia{
-    display: flex;
-}
-
-.social-icon{
-    padding: .3rem .4rem;
-    background-color: #fff;
-    border-radius: 100%;
-    margin-left: 10px;
-    font-size: 1rem;
-    line-height: 1rem;
-}
-
-.social-icon:first-child{
-    margin-left: 0;
-    padding: .3rem .3rem;
-}
-
-.social-icon a{
+#header  a{
     text-decoration: none;
-    color: #000;
+    color:#fff;
 }
 
-
-.fa-bars{
-    font-size: 1.6rem;
-    cursor:pointer;
+#header  a:hover{
+    color: rgb(163, 163, 163);
 }
 
-#mobile-menu{
-    position: absolute;
-    top: 9.9%;
-    left: 0;
-    background-color: #000000e7;
-    width:100%;
-    height: 100vh;
-    transition: all .5s ease;
-    z-index: 1;
-    display: none;/**Aqui faz aparecer o menu***/
+#logo img{
+    width: 60%;
 }
 
-#mobile-menu ul{
-    height: 100vh;
+#menu{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    gap: .5rem;
 }
 
-
-#mobile-menu li{
-    /* border: 1.3px solid transparent; */
+#menu a{
+    display: block;
+    padding:.5rem;
 }
 
-#mobile-menu li:hover{
-    border-bottom: 1.3px solid #fff;
+#btn-mobile{
+    display: none;
 }
 
-#mobile-menu a{
-    text-decoration: none;
-    font-size: .9rem;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    font-weight: 600;
+@media(max-width:700px){
 
-}
-
-@media (min-width:720px) {
-
-    header img{
-        width:150px;
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top:55px; 
+        right: 0px;
+        background-color: rgba(0, 0, 0, .9);
+        height:0;
+        margin: 0;
+        transition: .6s;
+        z-index: 999;
+        visibility: hidden;
+        overflow-y:hidden ;
+        text-align: center;
+    }
+  
+    #nav.active #menu{
+        height:calc(100vh - 50px);
+        visibility: visible;
+        overflow-y:auto;/*cria a barra de scroll*/
     }
 
-    .social-icon{
+    #menu a{
+        padding:1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+
+    #btn-mobile{
+        display: flex;
+        padding:.5rem 1rem;
         font-size: 1rem;
+        border: none;
+        background:none;
+        cursor: pointer;
+        gap: .5rem;
     }
 
-    .fa-bars{
-        font-size:2rem;
+    #hamburguer{
+        width: 20px;
+        border-top: 2px solid;
+        background-color: #fff;
     }
 
-    .fa-bars{
-        /* display: none; */
+    #hamburguer::after,
+    #hamburguer::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        color: white;
+        background-color: white;/*pega a cor definida dele */
+        margin-top: 3px;
+        transition: .3s;
+        position: relative;
     }
+
+    #nav.active #hamburguer{
+        border-top-color: transparent;
+    }
+    
+    #nav.active #hamburguer::before{
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top:-7px;
+}
 }
 
+@media(min-width:780px){
+    .container{
+        padding: 0 2rem;
+        background-color: #000;
+        margin: 0 auto;
+    }
+   
+}
 
 #video{
     position:relative;
@@ -164,7 +173,7 @@ header img{
 }
 
 .section-background{
-    padding: 1.8rem 1.5rem;
+    padding: 1.8rem 2.5rem;
     text-align: center;
     color: white;
 
@@ -177,13 +186,13 @@ header img{
 
 .section-background h2{
     margin-top: 0px;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 .section-background p{
     text-align: center;
     color: #fff;
-    font-size: .8rem;
+    font-size: 1rem;
     margin: 0;
     line-height: 1.3rem;
 }
@@ -254,6 +263,7 @@ header img{
     }
 }
 
+
 /* COMUNICAÇÃO */
 
 .section-branca{
@@ -277,7 +287,7 @@ h2{
 }
 
 .section-branca p{
-    font-size: .8rem;
+    font-size: 1rem;
     padding: 0;
     margin:1rem;
 }
@@ -420,6 +430,14 @@ h2{
 
 }
 
+@media (min-width:714px){
+    #versiculo img{
+        width: 255px;
+        height: 65px;
+        border-radius: 10px;
+    }
+}
+
 @media (min-width:1000px){
     #quem-somos{
     padding: 2.5rem 15rem;
@@ -476,7 +494,11 @@ h2{
     }
 }
 
-/* aqui vai conter o estilo da seção pedido de oração **************************************************************************/
+@media (min-width:478px){
+    #pastores img{
+        width: 320px;
+    }
+}
 
 /* PEDIDO DE ORAÇÃO */
 
@@ -531,15 +553,15 @@ h2{
     }
 
     #pedido-oracao h2{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     #estamosAqui{
-        width: 300px;
+        width: 270px;
     }
 
     #estamosAqui p{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         line-height: 25px;
         
     }
@@ -551,8 +573,8 @@ h2{
     }
 
     #estamosAqui img{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
     #pedido-oracao .links{
         margin-top: 20px;
@@ -567,7 +589,7 @@ h2{
 }
 
 #generosidade q{
-    font-size: .8rem;
+    font-size: .9rem;
     font-weight: 600;
     font-style: italic;
 }
@@ -603,13 +625,13 @@ h2{
 }
 
 #voluntario p{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 400;
-    line-height: 1.6rem;
+    line-height: 1.4rem;
 }
 
 #voluntario strong{
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     line-height:2.3rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -739,9 +761,10 @@ footer ~ div{/*todas a divs depois de footer*/
    text-align: center;
 }
 
-@media (min-width:425px){
+@media (max-width:477px){
     #logo-footer{
-        flex:1 0 250px;
+        flex:1 0 100%;
+        flex-wrap: wrap;
         text-align: center;
     }
 }
