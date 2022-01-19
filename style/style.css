@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 
-/* *{
-    border: 1px solid;
-} */
-
-html,body{
+*{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
     height: 100%;
     /* width: 100vw; */
-    background-color: #000;
-
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    outline: none;
-
+    background-color: rgba(0, 0, 0, 0.719);
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
 }
@@ -28,11 +28,11 @@ html,body{
     box-sizing: border-box;
     height: 55px;
     padding: .9rem;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, 0.884);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-around;
+
 }
 
 #header{
@@ -40,12 +40,12 @@ html,body{
     margin: 0 auto;
 }
 
-#header  a{
+#header a{
     text-decoration: none;
     color:#fff;
 }
 
-#header  a:hover{
+#header a:hover{
     color: #a3a3a3;
 }
 
@@ -57,6 +57,7 @@ html,body{
     display: flex;
     list-style: none;
     gap: .5rem;
+    position:relative;
 }
 
 #menu a{
@@ -64,96 +65,99 @@ html,body{
     padding:.5rem;
 }
 
+#menu ul{
+    position: absolute;
+    visibility:hidden;
+    transition: top .3s;
+    top: 90px;
+}
+
+#menu #mais:hover ul{
+    visibility: visible;
+    background-color: rgb(0, 0, 0);
+    margin-left: -90px; 
+    top: 35px;
+}
+
+#dropdown li{
+    list-style: none;
+    padding: 9px 10px;
+}
+
 #btn-mobile{
     display: none;
 }
 
-#dropdown{
-    display: none;
+input#checar{
     position: absolute;
-    background-color: rgb(170, 101, 101);
-    top: 55px;
-    right: 10px;
-    list-style: none;
-    padding: 10px;
-}
-
-#mais:hover #dropdown,
-#mais:hover #dropdown li{
-    display: block;
+    top:-100px;
 }
 
 @media screen and (max-width:700px){
 
     #menu{
-        display: block;
-        position: absolute;
-        width: 100%;
-        top:55px; 
-        right: 0px;
-        background-color: rgba(0, 0, 0, .9);
-        height:0;
-        margin: 0;
-        transition: .6s;
-        z-index: 999;
-        visibility: hidden;
-        overflow-y:hidden ;
-        text-align: center;
-    }
-  
-    #nav.active #menu{
-        height:calc(100vh - 50px);
-        visibility: visible;
-        overflow-y:auto;/*cria a barra de scroll*/
+        display: none;
+        overflow-y: auto;
     }
 
-    #menu a{
-        padding:1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    #menu li:first-child{
+        margin-top:30px;
     }
 
-    #btn-mobile{
+    label[for="checar"]{
+        height: 30px;
+        width: 30px;
         display: flex;
-        padding:.5rem 1rem;
-        font-size: 1rem;
-        border: none;
-        background:none;
-        cursor: pointer;
-        gap: .5rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
-    #hamburguer{
-        width: 20px;
-        border-top: 2px solid;
-        background-color: #fff;
-    }
-
-    #hamburguer::after,
-    #hamburguer::before{
-        content: '';
-        display: block;
-        width: 20px;
-        height: 2px;
-        color: white;
-        background-color: white;/*pega a cor definida dele */
-        margin-top: 3px;
-        transition: .3s;
-        position: relative;
-    }
-
-    #nav.active #hamburguer{
-        border-top-color: transparent;
-    }
     
-    #nav.active #hamburguer::before{
-        transform: rotate(135deg);
+    .line{
+        width: 90%;
+        height: 3px;
+        background-color: #fff;
+        margin:3px 0;
+        transition: 100ms ease all;
     }
 
-    #nav.active #hamburguer::after{
-        transform: rotate(-135deg);
-        top:-7px;
-}
+    /*AÇÃO DO HAMBURGUER*/
+
+    #checar:checked ~ label[for="checar"]
+    .line:nth-child(1){
+        transform: rotate(50deg) translateY(5px);
+        
+    }
+
+    #checar:checked ~ label[for="checar"]
+    .line:nth-child(2){
+        transform: rotate(-50deg) translateY(-5px);
+       
+    }
+
+    #checar:checked ~ label[for="checar"]
+    .line:nth-child(3){
+        opacity: 0;
+    }
+
+    #checar:checked ~ ul{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 55px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.884);
+        height: 100vh;
+        width: 100%;
+        overflow-y:auto;
+
+        font-size: 1.3em;
+        font-weight: 500;
+        z-index:99;
+    }
+
 }
 
 @media(min-width:780px){
@@ -167,11 +171,10 @@ html,body{
 
 #video{
     position:relative;
-    background-color: rgb(4, 161, 57);
-    position: relative;
     /* height:33.3%; */
     height: 50vh;
     max-height: 50vh;
+    top:55px;
 }
 
 #video iframe{
@@ -196,6 +199,7 @@ html,body{
     background-size: cover;
     background-position:center 100px;
     background-attachment: fixed;
+    margin-top: 55px;
 }
 
 .section-background{
@@ -449,10 +453,10 @@ h2{
         font-size: 1.5rem;
     }
 
-    #versiculo img{
-        /* width: 400px; */
-        /* height: 90px; */
-    }
+    /* #versiculo img{
+        /* width: 400px; 
+        /* height: 90px; 
+    } */
 
 }
 
@@ -534,11 +538,16 @@ h2{
     background-size: cover;
     background-attachment: fixed;
     object-position: center;
-
 }
 
 #pedido-oracao a{
     text-decoration: none;
+}
+
+#pedido-oracao #texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 #estamosAqui{
@@ -556,7 +565,7 @@ h2{
     padding: 0;
     text-align: left;
     font-size: 1rem;
-    /* margin-right: 10px; */
+    margin-right: 10px;
 }
 
 #estamosAqui strong{
@@ -575,7 +584,6 @@ h2{
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
-
     }
 
     #pedido-oracao h2{
@@ -588,14 +596,12 @@ h2{
 
     #estamosAqui p{
         font-size: 1.4rem;
-        line-height: 25px;
-        
+        line-height: 25px;  
     }
 
     #estamosAqui strong{
         font-size: 1.6rem;
-        line-height: 25px;
-        
+        line-height: 25px;   
     }
 
     #estamosAqui img{
@@ -716,6 +722,15 @@ h2{
 }
 
 /* FOOTER */
+footer{
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    background-color: #fff;
+}
+
 #section-branca footer{
     display: flex;
     flex-flow: row wrap;
@@ -728,15 +743,6 @@ footer h3{
     font-size: 1rem;
     font-weight: 800;
     text-align: center;
-}
-
-footer{
-    padding: 1rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
-    background-color: #fff;
 }
 
 footer ~ div{/*todas a divs depois de footer*/

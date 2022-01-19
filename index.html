@@ -42,9 +42,7 @@
                 <img src="picture/_icon/logoWhiteSmall.png" alt="Logo união church">
             </a>
             <nav id="nav">
-                <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-expanded="false"
-                    aria-controls="menu" class="menu">Menu</button>
-                <span id="hamburguer"></span>
+                <input type="checkbox" id="checar">
                 <ul id="menu" role="menu">
                     <li>
                         <a href="index.html">Home</a>
@@ -70,7 +68,7 @@
                                 <a href="#voluntario">Voluntário</a>
                             </li>
                             <li>
-                                <a href="#acaoSocial">Ação social</a>
+                                <a href="#acao-social">Ação social</a>
                             </li>
                             <li>
                                 <a href="#localizacao">Localização</a>
@@ -78,20 +76,24 @@
                         </ul>
                     </li>
                 </ul>
+                <label for="checar">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </label>
             </nav>
         </div>
     </header>
 
     <section id="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/&autoplay=1&controls=0"
-            title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UUYpXMp5iHM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     <section id="boasvindas" class="section-background">
         <div class="texto">
             <p>
                 <strong class="negrito">Siiiiim !!</strong>
-                A Uniao church <strong>esta de casa nova!</strong>
+                A União church <strong>esta de casa nova!</strong>
                 E voce também pode fazer parte desse
                 lindo projeto que Deus tem colocado em nosso coração para juntos <br>
                 <strong>
@@ -191,6 +193,7 @@
     <section id="pedido-oracao" class="section-background">
         <div class="texto">
             <h2>Faça seu pedido de oração</h2>
+
             <a href="https://api.whatsapp.com/send?phone=5519994678286&text=ol%C3%A1%20estranho">
                 <div id="estamosAqui">
                     <p>
@@ -200,6 +203,7 @@
                     <img src="picture/oração-icon.png" alt="icone pedido de oração">
                 </div>
             </a>
+            
             <div class="links">
                 <a href="https://api.whatsapp.com/send?phone=5519994678286&text=ol%C3%A1%20estranho"
                     class="botao">Enviar
@@ -323,12 +327,12 @@
                 <li>
                     <a href="#voluntario">Voluntário</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#acao-social">Ação social</a>
                 </li>
                 <li>
                     <a href="#localizacao">Localização</a>
-                </li>
+                </li> -->
             </ul>
         </div>
         <div id="container-footer">
