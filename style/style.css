@@ -20,161 +20,12 @@ body{
     font-size: 1em;
 }
 
- .container{
-    position: fixed;
-    width: 100%;
-    transform: translate(-10%);/*gambiarra*/
-    z-index: 9;
-    box-sizing: border-box;
-    height: 55px;
-    padding: .9rem;
-    background-color: rgba(0, 0, 0, 0.884);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-}
-
-#header{
-    width: 80%;
-    margin: 0 auto;
-}
-
-#header a{
-    text-decoration: none;
-    color:#fff;
-}
-
-#header a:hover{
-    color: #a3a3a3;
-}
-
-#logo img{
-    width: 60%;
-}
-
-#menu{
-    display: flex;
-    list-style: none;
-    gap: .5rem;
-    position:relative;
-}
-
-#menu a{
-    display: block;
-    padding:.5rem;
-}
-
-#menu ul{
-    position: absolute;
-    visibility:hidden;
-    transition: top .3s;
-    top: 90px;
-}
-
-#menu #mais:hover ul{
-    visibility: visible;
-    background-color: rgb(0, 0, 0);
-    margin-left: -90px; 
-    top: 35px;
-}
-
-#dropdown li{
-    list-style: none;
-    padding: 9px 10px;
-}
-
-#btn-mobile{
-    display: none;
-}
-
-input#checar{
-    position: absolute;
-    top:-100px;
-}
-
-@media screen and (max-width:700px){
-
-    #menu{
-        display: none;
-        overflow-y: auto;
-    }
-
-    #menu li:first-child{
-        margin-top:30px;
-    }
-
-    label[for="checar"]{
-        height: 30px;
-        width: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    
-    .line{
-        width: 90%;
-        height: 3px;
-        background-color: #fff;
-        margin:3px 0;
-        transition: 100ms ease all;
-    }
-
-    /*AÇÃO DO HAMBURGUER*/
-
-    #checar:checked ~ label[for="checar"]
-    .line:nth-child(1){
-        transform: rotate(50deg) translateY(5px);
-        
-    }
-
-    #checar:checked ~ label[for="checar"]
-    .line:nth-child(2){
-        transform: rotate(-50deg) translateY(-5px);
-       
-    }
-
-    #checar:checked ~ label[for="checar"]
-    .line:nth-child(3){
-        opacity: 0;
-    }
-
-    #checar:checked ~ ul{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        top: 55px;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.884);
-        height: 100vh;
-        width: 100%;
-        overflow-y:auto;
-
-        font-size: 1.3em;
-        font-weight: 500;
-        z-index:99;
-    }
-
-}
-
-@media(min-width:780px){
-    .container{
-        padding: 0 2rem;
-        background-color: #000;
-        margin: 0 auto;
-    }
-   
-}
-
 #video{
     position:relative;
     /* height:33.3%; */
     height: 50vh;
     max-height: 50vh;
-    top:55px;
+    /* top:55px; */
 }
 
 #video iframe{
@@ -199,7 +50,7 @@ input#checar{
     background-size: cover;
     background-position:center 100px;
     background-attachment: fixed;
-    margin-top: 55px;
+    /* margin-top: 55px; */
 }
 
 .section-background{
