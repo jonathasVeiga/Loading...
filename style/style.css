@@ -72,7 +72,7 @@ body{
 }
 
 .dropdown-menu{
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.945);
 }
 
 .dropdown-menu[data-bs-popper]{
@@ -159,7 +159,6 @@ body{
     height: 100%;
     border: none;
     margin: auto;
-    
 }
 
 @media (min-width:720px){
