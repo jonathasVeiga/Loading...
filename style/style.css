@@ -20,6 +20,11 @@ body{
     font-size: 1em;
 }
 
+header{
+    position: sticky;
+    top: 0;
+}
+
 /*MENU BOOTSTRAP*/
 body{
     margin: 0;
@@ -31,7 +36,7 @@ body{
 /* MENU */
 
 .navbar{
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.96);
 }
 
 .navbar-brand{
@@ -104,8 +109,6 @@ body{
 /* RESPONSIVO */
 
 @media screen and (max-width:767px){
-
-
     .navbar-brand img{
         width: 100px;
         height: 25px;
@@ -150,7 +153,6 @@ body{
     /* height:33.3%; */
     height: 50vh;
     max-height: 50vh;
-    /* top:55px; */
 }
 
 #video iframe{
@@ -187,6 +189,7 @@ body{
     align-items: center;
     object-fit: cover;
     object-position: center;
+    scroll-margin-top: 60px;
 }
 
 .section-background h2{
@@ -279,6 +282,7 @@ body{
     align-items: center;
     text-align: center;
     background-color: #fff;
+    scroll-margin-top: 60px;
 }
 
 h2{
