@@ -372,10 +372,7 @@
 
         $menu.forEach($coin => $coin.addEventListener('click',handleAddCLass));
         $a.forEach($coin => $coin.addEventListener('click',handleAddCLass));
-        $button.addEventListener('click',()=>{
-            $div.classList.add('navbar-collapse','collapse')
-            $div.classList.remove('none')
-        })
+        $button.addEventListener('click',handleRemoveClass)
         function handleAddCLass(){
             // $div.classList.remove('navbar-collapse','collapse')
             $div.classList.add('none')
