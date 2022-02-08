@@ -131,10 +131,10 @@ body{
         height: 100vh;
     }
 
-    /* .nav-item a.nav-link:active .collapse:not(.show){
+    .nav-item a.nav-link:focus .collapse{
         display: none;
         background-color: #2797ff;
-    } */
+    }
 
     .text-center:not(#first-drop-item){
         margin-top: 2%;
@@ -241,6 +241,11 @@ body{
     color: #919191;
 }
 
+
+.none{
+    display: none;
+}
+
 @media (min-width:720px){
     #boasvindas{
         background-position:top;
@@ -330,6 +335,14 @@ h2{
 .comunicacao-icon:hover .icon-name{
     transition-duration: 500ms;
     color: #b9b8b8;
+}
+
+.img-icon{
+    display:flex;
+    align-items:center
+
+
+
 }
 
 .comunicacao-icon a{
@@ -538,12 +551,6 @@ h2{
     text-decoration: none;
 }
 
-#pedido-oracao #texto{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
 #estamosAqui{
     display: flex;
     align-items: center;
@@ -589,7 +596,7 @@ h2{
     }
 
     #estamosAqui p{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         line-height: 25px;  
     }
 

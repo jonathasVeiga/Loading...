@@ -48,31 +48,31 @@
               <a class="navbar-brand" href="#">
                 <img src="picture/_icon/logoWhiteSmall.png" alt="" width="140" height="24" class="d-inline-block align-text-top">
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <button id="btn"class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item text-center">
-                    <a class="nav-link" aria-current="page" href="#video">Home</a>
+                    <a  id="menu" class="nav-link" aria-current="page" href="#video">Home</a>
                   </li>
                   <li class="nav-item text-center">
-                    <a class="nav-link" href="#comunicacao">Redes sociais</a>
+                    <a  id="menu" class="nav-link" href="#comunicacao">Redes sociais</a>
                   </li>
                   <li class="nav-item text-center">
-                    <a class="nav-link" href="#quem-somos">Quem somos</a>
+                    <a   id="menu" class="nav-link" href="#quem-somos">Quem somos</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link text-center dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a  class="nav-link text-center dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Mais
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item text-center" id="first-drop-item" href="#pastores">Pastores</a></li>
-                      <li><a class="dropdown-item text-center" href="#pedido-oracao">Pedido de oração</a></li>
-                      <li><a class="dropdown-item text-center" href="#generosidade">Generosidade</a></li>
-                      <li><a class="dropdown-item text-center" href="#voluntario">Voluntário</a></li>
-                      <li><a class="dropdown-item text-center" href="#acao-social">Ação social</a></li>
-                      <li><a class="dropdown-item text-center" href="#localizacao">Localização</a></li>
+                      <li><a  id="link"class="dropdown-item text-center" id="first-drop-item" href="#pastores">Pastores</a></li>
+                      <li><a  id="link"class="dropdown-item text-center" href="#pedido-oracao">Pedido de oração</a></li>
+                      <li><a  id="link"class="dropdown-item text-center" href="#generosidade">Generosidade</a></li>
+                      <li><a  id="link"class="dropdown-item text-center" href="#voluntario">Voluntário</a></li>
+                      <li><a  id="link"class="dropdown-item text-center" href="#acao-social">Ação social</a></li>
+                      <li><a  id="link"class="dropdown-item text-center" href="#localizacao">Localização</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -119,21 +119,23 @@
 
             <div class="comunicacao-icon">
                 <a href="https://www.instagram.com/uniao_church/" target="_blank">
-                    <img src="picture/_social/instagram.png" alt="Instagram">
+                    <div class="img-icon"><img src="picture/_social/instagram.png" alt="Instagram"></div>
                     <div class="icon-name"><span>Instagram</span></div>
                 </a>
             </div>
 
             <div class="comunicacao-icon">
                 <a href="https://www.facebook.com/uniaochurch/" target="_blank">
-                    <img src="picture/_social/facebook.png" alt="Facebook">
+                    <div class="img-icon">
+                        <img src="picture/_social/facebook.png" alt="Facebook">
+                    </div>
                     <div class="icon-name"><span>Facebook</span></div>
                 </a>
             </div>
 
             <div class="comunicacao-icon">
                 <a href="https://www.youtube.com/channel/UCuJrogT43X0xZDDyXdxJCng" target="_blank">
-                    <img src="picture/_social/youtube.png" alt="Youtube">
+                    <div class="img-icon"><img src="picture/_social/youtube.png" alt="Youtube"></div>
                     <div class="icon-name"><span>Youtube</span></div>
                 </a>
             </div>
@@ -303,25 +305,25 @@
             <h3>Menu</h3>
             <ul>
                 <li>
-                    <a href="index.html">Nova Casa</a>
+                    <a   href="index.html">Nova Casa</a>
                 </li>
                 <li>
-                    <a href="#comunicacao">Canais de comunicação</a>
+                    <a   href="#comunicacao">Canais de comunicação</a>
                 </li>
                 <li>
-                    <a href="#quem-somos">Quem somos</a>
+                    <a   href="#quem-somos">Quem somos</a>
                 </li>
                 <li>
-                    <a href="#pastores">Pastores</a>
+                    <a   href="#pastores">Pastores</a>
                 </li>
                 <li>
-                    <a href="#pedido-oracao">Pedido de oração</a>
+                    <a   href="#pedido-oracao">Pedido de oração</a>
                 </li>
                 <li>
-                    <a href="#generosidade">Generosidade</a>
+                    <a   href="#generosidade">Generosidade</a>
                 </li>
                 <li>
-                    <a href="#voluntario">Voluntário</a>
+                    <a   href="#voluntario">Voluntário</a>
                 </li>
                 <!-- <li>
                     <a href="#acao-social">Ação social</a>
@@ -361,7 +363,31 @@
     <!--Adicionando script do bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script>
+        const $menu = document.querySelectorAll('#menu');
+        const $a = document.querySelectorAll("#link");
+        
+        const $div = document.getElementById('navbarNavDropdown');
+        const $button = document.querySelector('.navbar-toggler-icon');
 
+        $menu.forEach($coin => $coin.addEventListener('click',handleAddCLass));
+        $a.forEach($coin => $coin.addEventListener('click',handleAddCLass));
+        $button.addEventListener('click',()=>{
+            $div.classList.add('navbar-collapse','collapse')
+            $div.classList.remove('none')
+        })
+        function handleAddCLass(){
+            // $div.classList.remove('navbar-collapse','collapse')
+            $div.classList.add('none')
+        }
+        function handleRemoveClass(){
+            $div.classList.add('navbar-collapse','collapse')
+            $div.classList.remove('none')
+        }
+
+        //collapse navbar-collapse
+        // $div.classList.remove('none');
+    </script>
 </body>
 
 </html>
