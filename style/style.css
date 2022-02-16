@@ -48,6 +48,12 @@ body{
     font-weight: 500;
 }
 
+.nav-link,
+.dropdown-item,.dropdown-menu{
+    padding: 0;
+    margin: 0;
+}
+
 .navbar-light 
 .navbar-nav 
 .nav-link,
@@ -76,7 +82,6 @@ body{
 }
 
 .dropdown-menu[data-bs-popper]{
-    top:45px;
     border: none;
 }
 
@@ -109,6 +114,15 @@ body{
         height: 25px;
     }
 
+    li.nav-item.dropdown{
+        padding: 0px;
+    }
+
+    a#link{
+        width: 161%;
+        transform: translate(-19%);
+    }
+
     .navbar-light .navbar-toggler-icon{
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
@@ -117,14 +131,39 @@ body{
         background-color: transparent;
     }
 
-    .navbar-nav{
-        height: 100vh;
+    a#navbarDropdownMenuLink{
+        width: 98%;
+    }
+
+    .navbar-nav,
+    li.nav-item.dropdown{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .navbar-nav{
+        height: 100vh;
         justify-content: flex-start;
         border: none;
         margin-top: 3em;
+        gap: 1em;
+    }
+
+    .dropdown-item{
+        margin: 1em 0;
+    }
+
+    li.nav-item.dropdown{
+        background-color: transparent;
+    }
+
+    .navbar-nav .text-center,
+    .nav-item{
+        background-color: #222;
+        width: 90%;
+        padding:.7em;
+        border-radius: 5px;
     }
 
     .navbar-collapse{
@@ -136,14 +175,6 @@ body{
         background-color: #2797ff;
     }
 
-    .text-center:not(#first-drop-item){
-        margin-top: 2%;
-    }
-
-    #first-drop-item{
-        margin-top: 0;
-    }
-
     .navbar-collapse{
         overflow-y: auto;
     }
@@ -151,7 +182,6 @@ body{
 
 #video{
     position:relative;
-    /* height:33.3%; */
     height: 50vh;
     max-height: 50vh;
 }
@@ -261,7 +291,6 @@ body{
 
     .section-background p{
         font-size: 1.1rem;
-        
     }
 
     #invista{
@@ -278,7 +307,6 @@ body{
     padding: 2.5rem 15rem;
     }
 }
-
 
 /* COMUNICAÇÃO */
 
@@ -335,6 +363,7 @@ h2{
     transition-duration: 500ms;
     background-color: #f5f5f5;
 }
+
 .comunicacao-icon:hover .icon-name{
     transition-duration: 500ms;
     color: #b9b8b8;
@@ -423,8 +452,6 @@ h2{
         align-items: center;
     }
 }
-
-
 
 #quem-somos{
     background:url(../picture/quemSomos-small.jpg);
@@ -791,6 +818,7 @@ footer ~ div{/*todas a divs depois de footer*/
     font-weight: 700;
     color: #3c3c3c;
 }
+
 #social-footer h3{
     margin-top: 0;
 }
