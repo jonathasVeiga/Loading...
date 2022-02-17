@@ -30,7 +30,7 @@ body{
 /* MENU */
 
 .navbar{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.63);
     height: 60px;
 }
 
@@ -78,7 +78,7 @@ body{
 }
 
 .dropdown-menu{
-    background-color: rgba(0, 0, 0, 0.76);
+    background-color: rgba(0, 0, 0, 0.63);
     gap: 1em;
 }
 
@@ -118,7 +118,7 @@ body{
         position: absolute;
         top: 60px;
         left:0;
-        background: rgba(0,0,0,.5);
+        background: rgba(0,0,0,.63);
         width: 100vw;
         padding:1.6em 2em;
     }
@@ -224,7 +224,7 @@ body{
     align-items: center;
     object-fit: cover;
     object-position: center;
-    scroll-margin-top: 50px;
+    scroll-margin-top: 60px;
 }
 
 .section-background h2{
@@ -323,7 +323,7 @@ body{
     align-items: center;
     text-align: center;
     background-color: #fff;
-    scroll-margin-top: 50px;
+    scroll-margin-top: 60px;
 }
 
 h2{
