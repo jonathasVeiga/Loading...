@@ -14,13 +14,12 @@ html{
 body{
     height: 100%;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.719);
+    /* background-color: rgba(0, 0, 0, 0.719); */
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
 }
 
 
-/*MENU BOOTSTRAP*/
 body{
     margin: 0;
     padding: 0;
@@ -31,7 +30,8 @@ body{
 /* MENU */
 
 .navbar{
-    background-color: rgba(0, 0, 0, 0.96);
+    background-color: rgba(0, 0, 0, 0.76);
+    height: 60px;
 }
 
 .navbar-brand{
@@ -78,16 +78,19 @@ body{
 }
 
 .dropdown-menu{
-    background-color: rgba(0, 0, 0, 0.945);
+    /* background-color: rgba(0, 0, 0, 0.76); */
+    gap: 1em;
 }
 
 .dropdown-menu[data-bs-popper]{
     border: none;
+    top: 39px;
 }
 
 .dropdown-item{
     color: #fff;
     font-weight: 500;
+    margin: .7em;
 }
 
 .dropdown-item:hover{
@@ -109,6 +112,17 @@ body{
 /* RESPONSIVO */
 
 @media screen and (max-width:767px){
+
+    div#navbarNavDropdown{
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: rgba(0,0,0,.5);
+        width: 100vw;
+        padding: 0 2em;
+    }
+
     .navbar-brand img{
         width: 100px;
         height: 25px;
