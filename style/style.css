@@ -13,7 +13,7 @@ html{
 
 body{
     height: 100%;
-    /* width: 100vw; */
+    width: 100vw;
     background-color: rgba(0, 0, 0, 0.719);
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
@@ -118,11 +118,6 @@ body{
         padding: 0px;
     }
 
-    a#link{
-        width: 161%;
-        transform: translate(-19%);
-    }
-
     .navbar-light .navbar-toggler-icon{
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
@@ -131,15 +126,10 @@ body{
         background-color: transparent;
     }
 
-    a#navbarDropdownMenuLink{
-        width: 98%;
-    }
-
     .navbar-nav,
     li.nav-item.dropdown{
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     .navbar-nav{
@@ -161,7 +151,7 @@ body{
     .navbar-nav .text-center,
     .nav-item{
         background-color: #222;
-        width: 90%;
+        width: 100%;
         padding:.7em;
         border-radius: 5px;
     }
