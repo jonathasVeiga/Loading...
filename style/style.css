@@ -78,7 +78,7 @@ body{
 }
 
 .dropdown-menu{
-    /* background-color: rgba(0, 0, 0, 0.76); */
+    background-color: rgba(0, 0, 0, 0.76);
     gap: 1em;
 }
 
@@ -90,7 +90,7 @@ body{
 .dropdown-item{
     color: #fff;
     font-weight: 500;
-    margin: .7em;
+    margin: .7em 0;
 }
 
 .dropdown-item:hover{
