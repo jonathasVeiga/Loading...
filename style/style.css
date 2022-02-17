@@ -30,7 +30,7 @@ body{
 /* MENU */
 
 .navbar{
-    background-color: rgba(0, 0, 0, 0.76);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 60px;
 }
 
@@ -114,10 +114,10 @@ body{
 @media screen and (max-width:767px){
 
     div#navbarNavDropdown{
-        display: block;
+        /* display: block; */
         position: absolute;
         top: 60px;
-        left: 0;
+        left: 10px;
         background: rgba(0,0,0,.5);
         width: 100vw;
         padding: 0 2em;
