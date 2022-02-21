@@ -85,10 +85,21 @@
             </div>
           </nav>
     </header>
-
+  
     <section id="video">
-        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/UUYpXMp5iHM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+   
+        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            ...
+            </div>
+        </div> -->
+        </div>
+    
     </section>
+
 
     <section id="boasvindas" class="section-background">
         <div class="texto">
@@ -156,7 +167,7 @@
 
     <section id="quem-somos" class="section-background">
         <div class="texto">
-            <h2>Quem Somos ?</h2>
+            <h2>Quem Somos?</h2>
             <p>
                 Somos a <strong>União Church</strong>,uma igreja que preza pela <strong>união das pessoas</strong>,
                 com
@@ -172,7 +183,7 @@
     </section>
 
     <section id="pastores" class="section-branca">
-        <h2>Pastores seniores do <br> nosso projeto</h2>
+        <h2>Pastores seniores</h2>
 
         <div id="img-pastores">
             <source>
@@ -188,7 +199,7 @@
 
             <div class="nome">
                 <h2>Kleber</h2>
-                <span>Nalugani</span>
+                <span>Balugani</span>
             </div>
         </div>
     </section>
@@ -375,6 +386,11 @@
     
     <!---Script do menu responsivo-->
     <script>
+        //MOdal
+        $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+
         const $menu = document.querySelectorAll('#menu');
         const $a = document.querySelectorAll("#link");
         
@@ -392,6 +408,7 @@
         function handleRemoveClass(e){
             $div.style.display = 'block'
         }
+
 
     </script>
 </body>
