@@ -214,10 +214,10 @@ body{
 
 .section-branca p,
 .section-background p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 0;
     margin:1rem;
-    line-height: 1.3rem;
+    line-height: 1.6rem;
     text-align: center;
 }
 
@@ -381,7 +381,7 @@ body{
     justify-content: flex-start;
     
     text-decoration: none;
-    padding: .6rem 0rem;
+    padding: .6rem 1rem;
 }
 
 .comunicacao-icon:last-child img{
@@ -426,9 +426,9 @@ body{
         font-size: 1.5rem;
     } */
 
-    .section-branca span{
+    /* .section-branca span{
         font-size: 1.3rem;
-    }
+    } */
 
     .comunicacao-icon{
         width: 80%;
@@ -643,6 +643,7 @@ body{
     font-size: .9rem;
     font-weight: 600;
     font-style: italic;
+    color: gray;
 }
 
 #generosidade cite{
@@ -725,7 +726,7 @@ body{
     width: 245px;
     height: 245px;
     border-radius: 10px;
-    margin-top:90px;
+    margin:3em 0 1em;
 }
 
 @media (min-width:425px){
