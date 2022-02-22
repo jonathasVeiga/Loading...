@@ -184,6 +184,52 @@ body{
     }
 }
 
+/*UNIVERSAL*/
+
+.section-branca,
+.section-background
+{
+    /* padding: 2.5rem 5rem; */
+   padding:1.8rem 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    scroll-margin-top: 60px;
+}
+
+.section-background{
+    object-fit: cover;
+    object-position: center;
+    color: white;
+}
+
+.section-branca h2,
+.section-background h2{
+    margin:0 0 1rem;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.section-branca p{
+    font-size: 1rem;
+    padding: 0;
+    margin:1rem;
+}
+
+.section-background p{
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.3rem;
+}
+
+/* inicio sessão video */
+
 #video{
     position:relative;
     height: 50vh;
@@ -216,32 +262,6 @@ body{
     background-position:center 100px;
     background-attachment: fixed;
     /* margin-top: 55px; */
-}
-
-.section-background{
-    padding: 1.8rem 2.5rem;
-    text-align: center;
-    color: white;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    object-fit: cover;
-    object-position: center;
-    scroll-margin-top: 60px;
-}
-
-.section-background h2{
-    margin-top: 0px;
-    font-size: 1.2em;
-}
-
-.section-background p{
-    text-align: center;
-    color: #fff;
-    font-size: 1rem;
-    margin: 0;
-    line-height: 1.3rem;
 }
 
 #boasvindas strong{
@@ -285,7 +305,6 @@ body{
     color: #919191;
 }
 
-
 .none{
     display: none;
 }
@@ -297,15 +316,15 @@ body{
     #boasvindas{
         background-position:top;
     }
-    .section-background{
+    /* .section-background{
         padding: 3rem 5rem;
         background-size: cover;
         background-attachment: fixed;
-    }
+    } */
 
-    .section-background p{
+    /* .section-background p{
         font-size: 1.1rem;
-    }
+    } */
 
     #invista{
        line-height: 35px;
@@ -324,33 +343,7 @@ body{
 
 /* COMUNICAÇÃO */
 
-.section-branca{
-    /* padding: 2.5rem 5rem; */
-    padding: 1rem 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #fff;
-    scroll-margin-top: 60px;
-}
 
-h2{
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    font-weight:900;
-}
-
-.section-branca h2{
-    margin:0 0 1rem;
-}
-
-.section-branca p{
-    font-size: 1rem;
-    padding: 0;
-    margin:1rem;
-}
 
 #container-comunicacao{
     display: flex;
@@ -434,13 +427,13 @@ h2{
 }
 
 @media (min-width:720px){
-    .section-branca{
+    /* .section-branca{
         padding: 2.5rem 5rem;
-    }
+    } */
 
-    .section-branca h2{
+    /* .section-branca h2{
         font-size: 1.5rem;
-    }
+    } */
 
     .section-branca span{
         font-size: 1.3rem;
@@ -631,9 +624,9 @@ h2{
         background-position: center;
     }
 
-    #pedido-oracao h2{
+    /* #pedido-oracao h2{
         font-size: 1.2rem;
-    }
+    } */
 
     #estamosAqui{
         width: 270px;
@@ -696,11 +689,6 @@ h2{
     flex-direction: column;
 }
 
-#voluntario strong{
-    font-size: 1.1rem;
-    font-weight: 700;
-}
-
 #voluntario p{
     font-size: 1.4rem;
     font-weight: 400;
@@ -710,7 +698,7 @@ h2{
 #voluntario strong{
     font-size: 1.6rem;
     line-height:2.3rem;
-    font-weight: 700;
+    font-weight: 900;
     text-transform: uppercase;
 }
 
@@ -779,8 +767,7 @@ footer{
 #section-branca footer{
     display: flex;
     flex-flow: row wrap;
-    background-color: #fff;
-    
+    background-color: #fff;  
 }
 
 footer h3{
