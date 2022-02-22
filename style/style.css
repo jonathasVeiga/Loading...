@@ -185,16 +185,15 @@ body{
 }
 
 /*UNIVERSAL*/
-
 .section-branca,
 .section-background
 {
-    /* padding: 2.5rem 5rem; */
-   padding:1.8rem 2.5rem;
+    padding: 2.5rem 5rem;
+   /* padding:1.8rem 2.5rem; */
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-flow: wrap column;
     align-items: center;
+    justify-content: space-evenly;
     text-align: center;
     background-color: #fff;
     scroll-margin-top: 60px;
@@ -208,24 +207,22 @@ body{
 
 .section-branca h2,
 .section-background h2{
-    margin:0 0 1rem;
     font-size: 1.7em;
     text-transform: uppercase;
     font-weight: 700;
 }
 
-.section-branca p{
+.section-branca p,
+.section-background p{
     font-size: 1rem;
     padding: 0;
     margin:1rem;
+    line-height: 1.3rem;
+    text-align: center;
 }
 
-.section-background p{
-    text-align: center;
+.section-background p {
     color: #fff;
-    font-size: 1rem;
-    margin: 0;
-    line-height: 1.3rem;
 }
 
 /* inicio sessão video */
@@ -289,7 +286,7 @@ body{
     text-decoration: none;
     padding: .5rem 1.3rem;
     border-radius: 50px;
-    margin-top:1.5rem;
+    /* margin-top:1.5rem; */
     align-self: center;
     transition: all 300ms ease-in-out;
 }
@@ -330,15 +327,9 @@ body{
        line-height: 35px;
     }
 
-    .botao{
+    /* .botao{
         margin-top: 1.5em;
-    }
-}
-
-@media (min-width:1000px){
-    .section-background{
-    padding: 2.5rem 15rem;
-    }
+    } */
 }
 
 /* COMUNICAÇÃO */
@@ -512,12 +503,6 @@ body{
     }
 }
 
-@media (min-width:1000px){
-    #quem-somos{
-    padding: 2.5rem 15rem;
-    }
-}
-
 /* PASTORES */
 
 #pastores img{
@@ -551,10 +536,6 @@ body{
 /*FAZER RESPONSSIVO DA IMAGEM*/
 
 @media(min-width:720px){
-    #pastores h2{
-        font-size: 1.5rem;
-    }
-
     #pastores img{
         width: 400px;
     }
@@ -595,7 +576,7 @@ body{
     border-radius: 15px;
     padding:.8rem;
     width: 200px;
-    margin: 0 auto;
+    margin: 1.5em auto;
 }
 
 #estamosAqui p{
@@ -647,7 +628,7 @@ body{
         height: 80px;
     }
     #pedido-oracao .links{
-        margin-top: 20px;
+        /* margin-top: 20px; */
     }
 
 }
