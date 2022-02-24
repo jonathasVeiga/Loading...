@@ -118,7 +118,7 @@ body{
         position: absolute;
         top: 60px;
         left:0;
-        background: rgba(0,0,0,.63);
+        background: rgba(0,0,0,.73);
         width: 100vw;
         padding:1.6em 2em;
     }
@@ -611,20 +611,25 @@ body{
     height: 60px;
 }
 
+@media(min-width:320px){
+    #estamosAqui{
+        width: 75%;
+    }
+
+    #estamosAqui p{
+        font-size: 1.2rem; 
+    }
+    #estamosAqui strong{
+        font-size: 1.3rem;  
+    }
+}
+
 @media (min-width:478px){
     #pedido-oracao{
         background:url(../picture/bgPedido-large.jpg);
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
-    }
-
-    /* #pedido-oracao h2{
-        font-size: 1.2rem;
-    } */
-
-    #estamosAqui{
-        width: 270px;
     }
 
     #estamosAqui p{
@@ -641,10 +646,7 @@ body{
         width: 80px;
         height: 80px;
     }
-    #pedido-oracao .links{
-        /* margin-top: 20px; */
-    }
-
+    
 }
 
 /* GENEROSIDADE */
