@@ -30,7 +30,7 @@ body{
 /* MENU */
 
 .navbar{
-    background-color: rgba(0, 0, 0, 0.63);
+    background-color: rgba(0, 0, 0, 0.73);
     height: 60px;
 }
 
@@ -78,7 +78,7 @@ body{
 }
 
 .dropdown-menu{
-    background-color: rgba(0, 0, 0, 0.63);
+    background-color: rgba(0, 0, 0, 0.73);
     gap: 1em;
 }
 
@@ -200,8 +200,6 @@ body{
 }
 
 .section-background{
-    object-fit: cover;
-    object-position: center;
     color: white;
 }
 
@@ -224,6 +222,22 @@ body{
 .section-background p {
     color: #fff;
 }
+
+@media screen and (max-width:663px){
+
+.section-branca,
+.section-background{
+    padding:1.8rem 1.5rem;
+}
+
+.section-branca p,
+.section-background p{
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+}
+
 
 /* inicio sessão video */
 
@@ -545,7 +559,7 @@ body{
     }
 
     #nomes::after{
-        left: 115px;/*ARRUMAR DEIXAR CENTRALIZADO RESPONSSIVAMENTE*/
+        /*left: 115px;ARRUMAR DEIXAR CENTRALIZADO RESPONSSIVAMENTE*/
     }
 }
 
