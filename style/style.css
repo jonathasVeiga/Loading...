@@ -30,7 +30,7 @@ body{
 /* MENU */
 
 .navbar{
-    background-color: rgba(0, 0, 0, 0.73);
+    background-color: rgba(0, 0, 0, 0.97);
     height: 60px;
 }
 
@@ -78,7 +78,7 @@ body{
 }
 
 .dropdown-menu{
-    background-color: rgba(0, 0, 0, 0.73);
+    background-color: rgba(0, 0, 0, 0.97);
     gap: 1em;
 }
 
@@ -118,7 +118,7 @@ body{
         position: absolute;
         top: 60px;
         left:0;
-        background: rgba(0,0,0,.73);
+        background: rgba(0,0,0,.97);
         width: 100vw;
         padding:1.6em 2em;
     }
@@ -197,6 +197,7 @@ body{
     text-align: center;
     background-color: #fff;
     scroll-margin-top: 60px;
+    
 }
 
 .section-background{
@@ -327,15 +328,6 @@ body{
     #boasvindas{
         background-position:top;
     }
-    /* .section-background{
-        padding: 3rem 5rem;
-        background-size: cover;
-        background-attachment: fixed;
-    } */
-
-    /* .section-background p{
-        font-size: 1.1rem;
-    } */
 
     #invista{
        line-height: 35px;
