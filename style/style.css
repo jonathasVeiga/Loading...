@@ -164,7 +164,7 @@ body{
 
     .navbar-nav .text-center,
     .nav-item{
-        background-color: #1a1a1a;
+        background-color: #0a0a0a;
         width: 100%;
         padding:.7em;
         border-radius: 5px;
@@ -229,6 +229,11 @@ body{
 .section-branca,
 .section-background{
     padding:1.8rem 1.5rem;
+}
+
+.section-branca h2,
+.section-background h2{
+    font-size: 1.4em;
 }
 
 .section-branca p,
