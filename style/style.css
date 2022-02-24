@@ -30,7 +30,7 @@ body{
 /* MENU */
 
 .navbar{
-    background-color: rgba(0, 0, 0, 0.97);
+    background-color: rgba(0, 0, 0, 0.87);
     height: 60px;
 }
 
@@ -78,7 +78,7 @@ body{
 }
 
 .dropdown-menu{
-    background-color: rgba(0, 0, 0, 0.97);
+    background-color: rgba(0, 0, 0, 0.87);
     gap: 1em;
 }
 
@@ -118,7 +118,7 @@ body{
         position: absolute;
         top: 60px;
         left:0;
-        background: rgba(0,0,0,.97);
+        background: rgba(0,0,0,.87);
         width: 100vw;
         padding:1.6em 2em;
     }
