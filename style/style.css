@@ -254,7 +254,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999;
 }
 
 #video iframe{
@@ -274,7 +273,7 @@ body{
 /* BOAS VINDAS */
 
 #boasvindas{
-    background:url(../picture/bemVindo-small.jpg);
+    background:url(../picture/bemVindo.webp);
     background-size: cover;
     background-position:center 100px;
     background-attachment: fixed;
