@@ -124,8 +124,8 @@ body{
     }
 
     .navbar-brand img{
-        width: 100px;
-        height: 25px;
+        width: 140px;
+        height: 24px;
     }
 
     li.nav-item.dropdown{
@@ -644,6 +644,13 @@ body{
     }
     
 }
+
+@media(min-width:664px){
+    #estamosAqui{
+        width: 277px;
+    }
+}
+
 
 /* GENEROSIDADE */
 
