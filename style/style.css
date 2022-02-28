@@ -554,9 +554,6 @@ body{
         font-size: 1.3rem;
     }
 
-    #nomes::after{
-        /*left: 115px;ARRUMAR DEIXAR CENTRALIZADO RESPONSSIVAMENTE*/
-    }
 }
 
 @media (min-width:478px){
