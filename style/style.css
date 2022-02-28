@@ -462,7 +462,7 @@ body{
 }
 
 #quem-somos{
-    background:url(../picture/quemSomos-small.jpg);
+    background:url(../picture/quemSomos.webp);
     background-position:left;
     /* ajustar o tamanho da imagem  */
     background-size: cover;
@@ -489,7 +489,7 @@ body{
 
 @media (min-width:478px){
     #quem-somos{
-        background:url(../picture/quemSomos.jpg);
+        background:url(../picture/quemSomos.webp);
         background-size: cover;
         background-attachment: fixed;
     }
@@ -568,7 +568,7 @@ body{
 /* PEDIDO DE ORAÇÃO */
 
 #pedido-oracao{
-    background:url(../picture/bgPedido-small.jpg) repeat;
+    background:url(../picture/bgPedido.webp) repeat;
     background-position:center;
     background-size: cover;
     background-attachment: fixed;
@@ -622,7 +622,7 @@ body{
 
 @media (min-width:478px){
     #pedido-oracao{
-        background:url(../picture/bgPedido-large.jpg);
+        background:url(../picture/bgPedido.webp);
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
@@ -674,7 +674,7 @@ body{
 /* VOLUNTÁRIO */
 
 #voluntario{
-    background:url(../picture/voluntario-smal1l.jpg);
+    background:url(../picture/voluntarios.webp);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -725,10 +725,11 @@ body{
 /* LOCALIZAÇÃO */
 
 #localizacao{
-    background-image: url(/picture/localizacao-small1.jpg);
+    background-image: url(/picture/localizacao.webp);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
 
     display: flex;
     flex-direction: column;
