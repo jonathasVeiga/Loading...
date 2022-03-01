@@ -32,6 +32,8 @@ body{
 .navbar{
     background-color: rgba(0, 0, 0, 0.87);
     height: 60px;
+    padding: 0;
+    width: 100vw;
 }
 
 .navbar-brand{
@@ -537,6 +539,7 @@ body{
 
 .nome span{
     display: block;
+    text-transform: uppercase;
 }
 
 .nome h2{
