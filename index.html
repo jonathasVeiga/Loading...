@@ -87,17 +87,21 @@
     </header>
 
     <section id="video">
-        rtgdfgdfgfd
-        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
-
-        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-            ...
+        <button data-bs-toggle="modal" data-tagVideo="https://www.youtube.com/embed/zcX7OJ-L8XQ" data-bs-target="#videoModal">Video</button>
+        <div class="modal fade" id="videoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="" allow="autoplay;" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div> -->
-        </div>
-    
+          </div>
     </section>
 
 
@@ -384,28 +388,13 @@
     <!--Adicionando script do bootstrap-->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/script.js"></script>
     <!---Script do menu responsivo-->
     <script>
-    
-        const $menu = document.querySelectorAll('#menu');
-        const $a = document.querySelectorAll("#link");
-        
-        const $div = document.getElementById('navbarNavDropdown');
-        const $button = document.getElementById('btn');
-
-        $menu.forEach($coin => $coin.addEventListener('click',handleAddCLass));
-        $a.forEach($coin => $coin.addEventListener('click',handleAddCLass));
-
-        $button.addEventListener('click',handleRemoveClass)
-        
-        function handleAddCLass(e){
-                $div.style.display = 'none'
-        }
-        function handleRemoveClass(e){
-            $div.style.display = 'block'
-        }
-
-
+    $(document).ready(function() {
+    autoPlayYouTubeModal();
+  });
+       
     </script>
 </body>
 
