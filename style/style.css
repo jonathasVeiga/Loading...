@@ -274,6 +274,12 @@ body{
     }
 }
 
+svg.bi.bi-play-circle-fill{
+    width: 3em;
+    height: 3em;
+    color: rgba(0, 0, 0, 0.486);
+}
+
 /* BOAS VINDAS */
 
 #boasvindas{
