@@ -257,6 +257,17 @@ body{
     margin: auto;
 }
 
+/* MODAL BOOTSTRAP */
+
+.modal-content{
+    background-color: transparent;
+    border: none;
+}
+
+.modal-header{
+    border-bottom: none;
+}
+
 @media (min-width:720px){
     #video{
         height:50vh;
