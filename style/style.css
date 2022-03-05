@@ -596,8 +596,7 @@ svg.bi.bi-play-circle-fill:hover{
     align-items: center;
     border: 1px dashed #919191;
     border-radius: 15px;
-    padding:.8rem;
-    width: 200px;
+    padding:1em;
     margin: 1.5em auto;
 }
 
@@ -621,13 +620,17 @@ svg.bi.bi-play-circle-fill:hover{
 
 @media(min-width:320px){
     #estamosAqui{
-        width: 91%;
+        width: 262px;
     }
     #estamosAqui p{
-        font-size: 1.2rem; 
+        font-size: 1.4rem; 
     }
     #estamosAqui strong{
         font-size: 1.3rem;  
+    }
+    #estamosAqui img{
+        width: 63px;
+        height: 63px;
     }
 }
 
@@ -639,9 +642,13 @@ svg.bi.bi-play-circle-fill:hover{
         background-position: center;
     }
 
+    #estamosAqui {
+        width: 310px;
+    }
+
     #estamosAqui p{
-        font-size: 1.3rem;
-        line-height: 25px;  
+        font-size: 1.6rem;
+        line-height: 27px;  
     }
 
     #estamosAqui strong{
