@@ -519,7 +519,7 @@ svg.bi.bi-play-circle-fill:hover{
         width:66%;
         border-radius: 10px;
     } 
-
+}
 
 @media (min-width:1000px){
     #versiculo img{
@@ -851,6 +851,17 @@ footer ~ div{/*todas a divs depois de footer*/
     display: flex;
     justify-content: space-between;
     gap: 2em;
+}
+
+@media (max-width:372px){
+    #container-menu-footer{
+        gap: 0em;
+    }
+
+    #menu-footer, #social-footer{
+        padding: 0px .3em;
+    }
+  
 }
 
 @media (max-width:520px){
