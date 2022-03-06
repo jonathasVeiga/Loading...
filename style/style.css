@@ -399,9 +399,6 @@ svg.bi.bi-play-circle-fill:hover{
 .img-icon{
     display:flex;
     align-items:center
-
-
-
 }
 
 .comunicacao-icon a{
@@ -446,27 +443,7 @@ svg.bi.bi-play-circle-fill:hover{
     width: 1.3rem;
 }
 
-@media (min-width:720px){
-    .comunicacao-icon{
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .icon-name span{
-        font-size: 1.7rem;
-    }
-
-    .comunicacao-icon{
-        /* padding: 0.2rem 1.8rem; */
-        /* line-height: 242%; */
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
+/* QUEM SOMOS  */
 
 #quem-somos{
     background:url(../picture/quemSomos.webp);
@@ -475,9 +452,8 @@ svg.bi.bi-play-circle-fill:hover{
     background-size: cover;
     background-repeat: repeat;
     background-attachment: fixed;
-    object-fit: cover;
-    object-position: center;
-
+    /* object-fit: cover;
+    object-position: center; */
 }
 
 #quem-somos .texto h2{
@@ -489,9 +465,16 @@ svg.bi.bi-play-circle-fill:hover{
 }
 
 #versiculo img{
-    width: 240px;
-    height: 50px;
+    /* width: 590,766px;
+    height: 123px; */
     border-radius: 10px;
+}
+
+@media (min-width:319px){
+    #versiculo img{
+        width:73%;
+        border-radius: 10px;
+    }
 }
 
 @media (min-width:478px){
@@ -504,20 +487,46 @@ svg.bi.bi-play-circle-fill:hover{
     #quem-somos h2{
         font-size: 1.5rem;
     }
-
-    /* #versiculo img{
-        /* width: 400px; 
-        /* height: 90px; 
-    } */
-
 }
 
-@media (min-width:714px){
+@media (min-width:720px){
     #versiculo img{
-        width: 255px;
-        height: 65px;
+        width:80%;
         border-radius: 10px;
+    } 
+
+    .comunicacao-icon{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+    .icon-name span{
+        font-size: 1.7rem;
+    }
+
+    .comunicacao-icon{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width:777px){
+    #versiculo img{
+        width:66%;
+        border-radius: 10px;
+    } 
+
+
+@media (min-width:1000px){
+    #versiculo img{
+        width:50%;
+        border-radius: 10px;
+    } 
+
 }
 
 /* PASTORES */
