@@ -28,6 +28,11 @@ body{
 
 /* MENU */
 
+#social-media{
+    background-color: #fff;
+    z-index:999;
+}
+
 .navbar{
     background-color: rgba(0, 0, 0, 0.87);
     height: 60px;
@@ -350,6 +355,10 @@ svg.bi.bi-play-circle-fill:hover{
 @media (min-width:720px){
     #boasvindas{
         background-position:top;
+        background:url(../picture/Boas-vindas800.webp);
+        background-size: cover;
+        background-position:center 100px;
+        background-attachment: fixed;
     }
 
     #invista{
@@ -478,18 +487,28 @@ svg.bi.bi-play-circle-fill:hover{
 }
 
 @media (min-width:478px){
-    #quem-somos{
-        background:url(../picture/quemSomos.webp);
-        background-size: cover;
-        background-attachment: fixed;
-    }
-
     #quem-somos h2{
         font-size: 1.5rem;
     }
 }
 
+@media(max-width:570px){
+    #quem-somos{
+        background-image: url(../picture/quem-somos800.png);
+        background-position:center;
+        background-size: cover;
+    }
+
+}
+
 @media (min-width:720px){
+    #quem-somos{
+        background:url(../picture/quemSomos.webp);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    
     #versiculo img{
         width:80%;
         border-radius: 10px;
