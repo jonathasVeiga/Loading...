@@ -27,12 +27,6 @@ body{
 }
 
 /* MENU */
-
-#social-media{
-    background-color: #fff;
-    z-index:999;
-}
-
 .navbar{
     background-color: rgba(0, 0, 0, 0.87);
     height: 60px;
@@ -44,9 +38,9 @@ body{
     padding: 0;
 }
 
-.navbar-collapse{
+/* .navbar-collapse{
     justify-content: flex-end;
-}
+} */
 
 .navbar-light .navbar-brand{
     color: #fff;
@@ -764,7 +758,7 @@ svg.bi.bi-play-circle-fill:hover{
 /* LOCALIZAÇÃO */
 
 #localizacao{
-    background-image: url(/picture/localizacao.webp);
+    background-image: url(../picture/localizacao.webp);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
