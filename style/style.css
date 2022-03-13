@@ -169,6 +169,7 @@ body{
 
     .navbar-collapse{
         height: 100vh;
+        flex-grow: 0 !important;
     }
 
     .nav-item a.nav-link:focus .collapse{
