@@ -28,8 +28,19 @@ body{
 
 .social-menu{
     /* border: 1px solid red; */
-    flex-grow: 1;
+    width: 45%;
 }
+
+a.social-icon{
+    padding:.4em .5em;
+    text-align: center;
+    /* border-radius:50%; */
+    /* background-color: #fff; */
+}
+
+/* a.social-icon svg{
+    color: aquamarine;
+} */
 
 /* MENU */
 .navbar{
@@ -42,10 +53,6 @@ body{
     margin: 0;
     padding: 0;
 }
-
-/* .navbar-collapse{
-    justify-content: flex-end;
-} */
 
 .navbar-light .navbar-brand{
     color: #fff;
@@ -116,6 +123,12 @@ body{
 /* RESPONSIVO */
 
 @media screen and (max-width:767px){
+    .social-menu{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:768px){
     div#navbarNavDropdown{
         /* display: block; */
         position: absolute;
@@ -180,10 +193,6 @@ body{
     .nav-item a.nav-link:focus .collapse{
         display: none;
         background-color: #2797ff;
-    }
-
-    .navbar-collapse{
-        /* overflow-y: auto; */
     }
 }
 
