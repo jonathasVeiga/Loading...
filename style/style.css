@@ -121,14 +121,28 @@ a.social-icon{
 }
 
 /* RESPONSIVO */
-
-@media screen and (max-width:767px){
+/*ocutar redes sociais até 376px*/
+@media screen and (max-width:376px){
     .social-menu{
-        width: 45%;
+        display: none;
+        visibility: hidden;
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (min-width:385px){
+   .justify-content-evenl{
+       justify-content: space-between;
+       padding: 0 1em;
+   }
+}
+
+@media screen and (min-width:992px){
+    .social-menu{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:991px){
     div#navbarNavDropdown{
         /* display: block; */
         position: absolute;
@@ -490,7 +504,7 @@ svg.bi.bi-play-circle-fill:hover{
 
 @media (min-width:319px){
     #versiculo img{
-        width:73%;
+        width:90%;
         border-radius: 10px;
     }
 }
