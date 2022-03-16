@@ -10,18 +10,13 @@
 
  $button.addEventListener('click',handleRemoveClass)
  
- function handleAddCLass(e){
-         $div.style.display = 'none'
- }
- function handleRemoveClass(e){
-     $div.style.display = 'block'
+ function handleAddCLass(){
+    $div.style.display = 'none'
  }
 
+ function handleRemoveClass(){
+     $div.style.display === 'block' ? $div.style.display ='none' : $div.style.display ='block'
+     console.log()
+ }
 
  //O MODAL
-
- let video = document.getElementsByClassName("videoY")[0];
-
- function play(){
-   video.onPlayerReadyonReady();
- }
