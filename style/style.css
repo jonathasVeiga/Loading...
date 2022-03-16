@@ -492,7 +492,7 @@ svg.bi.bi-play-circle-fill:hover{
 
 @media(max-width:570px){
     #quem-somos{
-        background-image: url(../picture/quem-somos800.png);
+        background-image: url(../picture/quem-somos800.webp);
         background-position:center;
         background-size: cover;
     }
