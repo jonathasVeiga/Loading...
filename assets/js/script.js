@@ -16,7 +16,6 @@
 
  function handleRemoveClass(){
      $div.style.display === 'block' ? $div.style.display ='none' : $div.style.display ='block'
-     console.log()
  }
 
  //O MODAL
@@ -33,27 +32,13 @@
           height: '360',
           width: '640',
           videoId: '7cfgTZGdxHg',
-          // events: {
-          //   'onReady': onPlayerReady,
-          //   'onStateChange': onPlayerStateChange
-          // }
         });
       }
-
-      // function onPlayerReady(event) {
-      //   event.target.playVideo();
-      // }
 
       function play(){
         player.playVideo();
       }
 
-      // var done = false;
-      // function onPlayerStateChange(event) {
-      //   if (event.data == YT.PlayerState.PLAYING && !done) {
-      //     done = true;
-      //   }
-      // }
       function stopVideo() {
         player.stopVideo();
       }
