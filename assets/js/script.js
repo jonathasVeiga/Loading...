@@ -33,28 +33,27 @@
           height: '360',
           width: '640',
           videoId: '7cfgTZGdxHg',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
+          // events: {
+          //   'onReady': onPlayerReady,
+          //   'onStateChange': onPlayerStateChange
+          // }
         });
       }
 
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
+      // function onPlayerReady(event) {
+      //   event.target.playVideo();
+      // }
 
       function play(){
         player.playVideo();
       }
 
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          // setTimeout(stopVideo, 6000);
-          done = true;
-        }
-      }
+      // var done = false;
+      // function onPlayerStateChange(event) {
+      //   if (event.data == YT.PlayerState.PLAYING && !done) {
+      //     done = true;
+      //   }
+      // }
       function stopVideo() {
         player.stopVideo();
       }
