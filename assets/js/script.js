@@ -44,6 +44,10 @@
         event.target.playVideo();
       }
 
+      function play(){
+        player.playVideo();
+      }
+
       var done = false;
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING && !done) {
